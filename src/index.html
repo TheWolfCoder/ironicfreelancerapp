@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="app/styles/styles.css" />
+    <link rel="stylesheet" href="src/app/styles/styles.css" />
 
 
     <!-- Polyfill(s) for older browsers -->
@@ -17,13 +17,12 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="systemjs.config.js"></script>
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
   </head>
 
   <body>
-    <app>Loading AppComponent content here ...</app>
+    <app-root>Loading AppComponent content here ...</app-root>
   </body>
 </html>
