@@ -22,7 +22,7 @@
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
   </head>
-  <base href="/home"></base>
+<script>document.write('<base href="' + document.location + '" />');</script>
   <body>
     <app>Loading AppComponent content here ...</app>
   </body>
