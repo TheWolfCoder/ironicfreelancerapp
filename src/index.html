@@ -16,12 +16,13 @@
 
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
 
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
   </head>
-
+  <base href="/"></base>
   <body>
     <app>Loading AppComponent content here ...</app>
   </body>
