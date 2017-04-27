@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -33,7 +34,8 @@ import { AppRoutingModule } from './app-routing.module';
 	],
 	providers: [
 		DocumentService,
-		ProposalService
+		ProposalService,
+		{provide: LocationStrategy, useClass: HashLocationStrategy}
 	],
 	bootstrap: [
 		AppComponent
